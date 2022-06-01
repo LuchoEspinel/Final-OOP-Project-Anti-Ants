@@ -1,0 +1,105 @@
+*****MANUAL DE USUARIO*****
+---------------------------
+Ejemplo guiado de ejecución
+---------------------------
+NOTA: AntiAnts no está diseñado para funcionar en segundo plano si desea que este
+funcione debe dejar el programa abierto.
+Nota: La caja de notificaciones se mostrará una al iniciar la ejecución 
+	  y otra cada hora mientras la app esté en ejecución. 
+1. Ejecutar AntiAnts.exe
+2. Presionar la tecla Enter y esperar a que reaccione la app
+3. Seleccionar una de las opciones
+	1) Crear cuenta.
+		a. Ingresar el usuario que desea crear
+		b. Ingresar la contraseña con la que desea crear la cuenta
+		c. Despues de esto el programa lo regresa al menu del literal (3.)
+	2) Iniciar sesión.
+		a. Ingresar un usuario existente
+		b. Ingresar la contraseña correspondiente al usuario
+		c.Despues de esto se abrirá este menu:
+		*** ¿Qué desea? ***
+		1) registrar.
+			¿Cuanto gastaste?
+			10000 //Aqui se debe ingresar el valor que desee.
+			¿Qué categoría?
+			CATEGORÍAS:
+			------------
+			1. comida.
+			2. bebidas.
+			3. otros
+			*1 //Aqui seleccionar el concepto del registro.
+		2) Ver gráficas.
+			Al seleccionar esto se abrirá una ventana emergente en el 
+			cual podra ver en una grafica todos los registros realizados.
+		3) Ver datos.
+			Aqui verá en orden cronologico el ingreso de los registros que ha hecho.
+		4) Cerrar sesión.
+			Aqui puede cerrar la sesión para ingresar a una distinta.
+			Despues de esto se abre el menu del literal (3.)
+		3) Salir.
+			Esto cierra el programa.
+
+-------------------------------------------------------------------------------------------------
+
+1.OBJETIVO DE LA APP.
+
+Esta app tiene como objetivo llevar un registro de los gastos
+hormiga del usuario. 
+
+***Clases.***
+La app cuenta con una sola clase llamada "usuario", la cual cuenta con seis 
+métodos incluyendo el constructor, los cuales son:
+
+crear_cuenta():
+Con este método podemos crear una cuenta en la app con usuario y contraseña, 
+lo cual nos permite manejar los datos de forma más cómoda.
+
+login():
+Este método valida si el usuario y contraseña son correctos o si existe una 
+cuenta con esos datos para, de esa forma, buscar el registro que pertenece 
+a esa cuenta y trabajar con ese archivo.
+
+grafica():
+Este método tiene funciones como mostrar las graficas donde se aprecia de 
+mejor manera la interacción de los datos ingresados.
+
+registrar():
+Este método nos permite el ingresar los datos de manera fácil y rápida.
+mostrar_datos():
+Con este método podemos imprimir en pantalla los datos que hemos ingresado 
+desde el momento en que abrimos la cuenta.
+
+***Funciones.***
+La app cuenta con una serie de funciones que permiten organizar de forma 
+más efectiva el código Entre ellas tenemos:
+
+bienvenida():
+Esta función muestra un mensaje de bienvenida al usuario para que se cree 
+un ambiente agradable entre el usuario y la app.
+
+login_pg():
+Esta función despliega un menú para saber si el usuario quiere crear cuenta, 
+ingresar o salir directamente. Finalmente retorna una variable con la opción 
+escogida por el usuario.
+
+tiene_cuenta():
+Esta función valida la opción que retorna la función "login_pg" y llama a 
+respectivos métodos según la opción ingresada por el usuario.
+
+noti():
+Esta función tiene como objetivo crear una caja de notificación.
+mostrar_noti():
+Esta función muestra la caja de notificaciones creada con la función "noti" 
+cada 1 hora mientras la app esté en funcionamiento.
+
+app():
+Finalmente, esta función recoge todos los método y funciones y los ejecuta 
+de manera armónica para que el usuario pueda hacer uso de la app sin errores.
+
+
+2.DESCARGAR DE LA APP.
+
+Esta app se encuentra comprimida en un archivo punto zip (.zip), el cual
+lleva como contedio: manual de usuario; un archivo (.csv) donde se guardan
+los usuarios y contraseñas y el archivo ejecutable (.exe) de la app.
+
